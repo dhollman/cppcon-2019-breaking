@@ -519,6 +519,24 @@ void my_function(ExecSpace ex, MemSpace mem) {
 ---
 <!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
 
+## Conclusions <!-- {{{1 -->
+
+<!-- ................................................................................ -->
+
+---
+<!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
+
+<!-- {{{2 -->
+
+@box[boxed-with-shadow span-80-center box-vertical-center font-150](When faced with the possibility of exposing implicit behaviors in a system, developers should think hard about ways to ensure that code dependent on those implicit behaviors doesn't <span class="snl-medium-blue text-bold">"accidentally"</span> work.)
+
+<!-- }}}2............................................................................ -->
+
+<!-- }}}1............................................................................ -->
+
+---
+<!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
+
 ## Questions? <!-- {{{1 -->
 
 <!-- ................................................................................ -->
