@@ -1,0 +1,14 @@
+@startuml constraints
+skinparam rectangle {
+  BackgroundColor #005376
+  BorderColor #00ACD4
+  FontColor #FFFFFF
+  ArrowColor #5B3E36
+  RoundCorner 10
+}
+
+rectangle "Inner Product\nof all Constraints\n(Fewest Concepts)" as MCL
+rectangle "Outer Product\nof all Constraints\n(Most Flexible)" as PC
+MCL <-right-> PC : "                     Ideal                      \n                  Concept Set                   \n                        <&arrow-bottom>                        "
+@enduml
+

@@ -1,0 +1,13 @@
+@startuml axioms
+skinparam rectangle {
+  BackgroundColor #005376
+  BorderColor #00ACD4
+  FontColor #FFFFFF
+  ArrowColor #5B3E36
+  RoundCorner 10
+}
+
+rectangle "Inner Product of Specific Choices\nfrom each Semantic Set\n(Fewest Concepts)" as MCL
+rectangle "Outer Product\nof all Semantic Sets\n(Most Inclusive)" as PC
+MCL <-right-> PC : "                     Ideal                      \n                  Concept Set                   \n                        <&arrow-bottom>                        "
+@enduml

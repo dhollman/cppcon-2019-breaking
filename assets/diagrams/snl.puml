@@ -1,0 +1,8 @@
+skinparam rectangle {
+  BackgroundColor #005376
+  BorderColor #00ACD4
+  FontColor #FFFFFF
+  ArrowColor #5B3E36
+  RoundCorner 10
+}
+
