@@ -62,19 +62,6 @@
 <!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
 
 @snap[north span-100 slide-title]
-### Obligatory XKCD <!-- {{{2 -->
-@snapend
-
-![Obligatory XKCD](assets/img/xkcd.png)
-<!-- .element: class="boxed-with-shadow span-35" -->
-
-
-<!-- }}}2............................................................................ -->
-
----
-<!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
-
-@snap[north span-100 slide-title]
 ### Main Argument of this Talk <!-- {{{2 -->
 @snapend
 
@@ -147,6 +134,22 @@
 <!-- }}}2............................................................................ -->
 
 ---
+<!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
+
+@snap[north span-100 slide-title]
+### Concept-driven design is not new <!-- {{{2 -->
+@snapend
+
+@box[dark-boxed-with-shadow span-100 box-vertical-center font-150]("Concept-driven design" <b>*is*</b> generic programming!)
+
+<div class="space-3"></div>
+
+@css[fragment text-gray]((Go watch Sean Parent's talk from this year's CppCon!&rpar;)
+
+
+<!-- }}}2............................................................................ -->
+
+---
 <!-- .slide: class="content-slide snl-slide" style="font-size: 90%" --> 
 
 @snap[north span-100 slide-title]
@@ -172,7 +175,10 @@
 @quote[Concepts = Constraints + Axioms](A. Sutton and B. Stroustrup, SLE '11)
 <!-- .element: class="boxed-with-shadow" -->
 </div>
-<br> <br>
+<br>
+@css[fragment text-gray]((Go watch Sean Parent's talk from this year's CppCon!&rpar;)
+<br>
+<br>
 <div class="fragment layout-ignore">
 @box[dark-boxed-with-shadow span-80-center box-vertical-center](Key Point#C++20 "concepts lite" are a language feature that lacks a way to describe most of the requirements on a concept.  Concepts are not just a set of compile-time requirements!)
 
@@ -283,6 +289,24 @@ void replicate_if(Container& c, UnaryPredicate const& pred) {
 <!-- }}}2............................................................................ -->
 
 <!-- }}}1............................................................................ -->
+
+---
+<!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
+
+@snap[north span-100 slide-title]
+### What are we looking for, precisely? <!-- {{{2 -->
+@snapend
+
+@ul
+* Titus Winters: what kinds of contract changes are doable (but hard) and what kind are impossible?
+    * For a function, *weakening preconditions* and *strengthening postconditions* is doable (but hard)
+    * For a function, *strengthening preconditions* and *weakening postconditions* is (often) impossible
+* Applying this lesson to models of concepts:
+    * Look out for models that @css[snl-medium-blue text-bold]("accidentally") *weaken* preconditions or *strengthen* postconditions with respect to those of the concept generically.
+    * When the user is given a different model of the concept, that "change" will *strengthen* preconditions or *weaken* postconditions, leading to chaos (or worse)
+@ulend
+
+<!-- }}}2............................................................................ -->
 
 <!-- ################################################################################ -->
 
@@ -504,6 +528,10 @@ void my_function(ExecSpace ex, MemSpace mem) {
 <!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
 
 ## Live Demo? <!-- {{{2 -->
+
+### Thanks to David Poliakoff for putting this together
+
+### <a href="https://github.com/DavidPoliakoff">github.com/DavidPoliakoff</a>
 
 <!-- }}}2............................................................................ -->
 
@@ -759,5 +787,19 @@ namespace Kokkos {
 @ulend
 
 <!-- }}}2............................................................................ -->
+
+---
+<!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
+
+@snap[north span-100 slide-title]
+### Obligatory XKCD <!-- {{{2 -->
+@snapend
+
+![Obligatory XKCD](assets/img/xkcd.png)
+<!-- .element: class="boxed-with-shadow span-35" -->
+
+
+<!-- }}}2............................................................................ -->
+
 
 <!-- }}}1............................................................................ -->
