@@ -12,7 +12,12 @@
 
 ## [dsh.fyi/cppcon-2019](https://dsh.fyi/cppcon-2019)
 
-<div class="space-3"></div>
+<div class="space-2"></div>
+
+![dsh.fyi/cppcon-2019](assets/img/qrcode.png)
+<!-- .element: style="width:20%" -->
+
+@css[fragment text-gray font-70](May not look good on your screen.  Please judge me by my C++, not my (responsive&rpar; CSS)
 
 
 <!-- }}}2............................................................................ -->
@@ -557,6 +562,10 @@ void my_function(ExecSpace ex, MemSpace mem) {
 <!-- {{{2 -->
 
 @box[boxed-with-shadow span-80-center box-vertical-center font-150](When faced with the possibility of exposing implicit behaviors in a system, developers should think hard about ways to ensure that code dependent on those implicit behaviors doesn't <span class="snl-medium-blue text-bold">"accidentally"</span> work.)
+
+<div class="space-5"></div>
+
+@css[fragment text-gray]((And go watch Sean Parent's talk from this year's CppCon!&rpar;)
 
 <!-- }}}2............................................................................ -->
 
